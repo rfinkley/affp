@@ -57,32 +57,55 @@ main {
     background-color: #2E2A2A;
     color: #fff;
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 #about {
     grid-area: about;
     height: 400px;
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 .services {
     display: grid;
     height: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "alarm"
         "sprinkler"
         "extinguisher"
-        "contact"
     ;
-}
-
-.services > h1 {
-    height: 50px;
     background-color: #2E2A2A;
     color: #fff;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+section {
+    background-color: #EFEFEF;
+    color: #2E2A2A;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    height: 400px;
     text-align: center;
+    padding: 1rem;
 }
 
 footer {
+    padding: 1rem;
     grid-area: footer;
+    text-align: center;
+    height: 200px;
+    background-color: #EFEFEF;
 }
