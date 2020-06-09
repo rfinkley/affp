@@ -7,20 +7,40 @@
     ;
 }
 
+/* Header & Nav  */
+
 header {
     grid-area: header;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
 }
 
-main {
-    grid-area: main;
+#logo {
+    border-bottom: 1.5rem solid #2E2A2A;
+    padding: 1rem;
 }
 
-footer {
-    grid-area: footer;
+nav {
+    margin: 0 auto;
+    display: flex;
 }
+
+#nav {
+    margin: 1rem auto;
+    display: flex;
+}
+
+#nav > li {
+    margin: 0 1rem;
+}
+
+/* Main */
 
 main {
     display: grid;
+    grid-area: main;
     grid-template-areas: 
         "hero"
         "about"
@@ -29,10 +49,25 @@ main {
     ;
 }
 
+/* Hero Image */
 
+#hero {
+    grid-area: hero;
+    height: 250px;
+    background-color: #2E2A2A;
+    color: #fff;
+    text-align: center;
+}
+
+#about {
+    grid-area: about;
+    height: 400px;
+    text-align: center;
+}
 
 .services {
     display: grid;
+    height: auto;
     grid-template-areas: 
         "alarm"
         "sprinkler"
@@ -41,5 +76,13 @@ main {
     ;
 }
 
+.services > h1 {
+    height: 50px;
+    background-color: #2E2A2A;
+    color: #fff;
+    text-align: center;
+}
 
-
+footer {
+    grid-area: footer;
+}
