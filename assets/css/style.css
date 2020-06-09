@@ -1,0 +1,45 @@
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "hero"
+        "about"
+        "services"
+        "contact"
+    ;
+}
+
+
+
+.services {
+    display: grid;
+    grid-template-areas: 
+        "alarm"
+        "sprinkler"
+        "extinguisher"
+        "contact"
+    ;
+}
+
+
+
