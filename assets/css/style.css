@@ -102,14 +102,45 @@ main {
     font-family: 'Bebas Neue', cursive;
     font-size: large;
     letter-spacing: 3px;
-    
+    outline: none;
+}
+
+#whoweare {
+    margin: 1rem;
 }
 
 #about {
     grid-area: about;
-    height: 400px;
+    position: relative;
     text-align: center;
     padding-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#about::after {
+    content: "";
+    background-image: url("/assets/img/firedeptlogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#about > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .services {
