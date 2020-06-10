@@ -18,8 +18,13 @@ header {
 }
 
 #logo {
-    border-bottom: 1.5rem solid #2E2A2A;
+    border-bottom: 2rem solid #2E2A2A;
     padding: 1rem;
+}
+
+#logo > img {
+    height: 100px;
+    width: 400px;
 }
 
 nav {
@@ -28,12 +33,21 @@ nav {
 }
 
 #nav {
-    margin: 1rem auto;
+    margin: 1rem 0;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2E2A2A;
 }
 
 #nav > li {
     margin: 0 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
 }
 
 /* Main */
@@ -52,12 +66,43 @@ main {
 /* Hero Image */
 
 #hero {
-    grid-area: hero;
-    height: 250px;
-    background-color: #2E2A2A;
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+}
+
+#cta {
     color: #fff;
-    text-align: center;
-    padding-top: 1.5rem;
+    background-color: #C0291D;
+    border: 1px #707070 solid;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    letter-spacing: 3px;
+    
 }
 
 #about {
@@ -109,3 +154,4 @@ footer {
     height: 200px;
     background-color: #EFEFEF;
 }
+
