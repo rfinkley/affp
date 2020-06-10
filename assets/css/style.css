@@ -7,20 +7,54 @@
     ;
 }
 
+/* Header & Nav  */
+
 header {
     grid-area: header;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
 }
 
-main {
-    grid-area: main;
+#logo {
+    border-bottom: 2rem solid #2E2A2A;
+    padding: 1rem;
 }
 
-footer {
-    grid-area: footer;
+#logo > img {
+    height: 100px;
+    width: 400px;
 }
+
+nav {
+    margin: 0 auto;
+    display: flex;
+}
+
+#nav {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2E2A2A;
+}
+
+#nav > li {
+    margin: 0 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+}
+
+/* Main */
 
 main {
     display: grid;
+    grid-area: main;
     grid-template-areas: 
         "hero"
         "about"
@@ -29,17 +63,95 @@ main {
     ;
 }
 
+/* Hero Image */
 
+#hero {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/hero-image.jpeg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  width: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+}
+
+#cta {
+    color: #fff;
+    background-color: #C0291D;
+    border: 1px #707070 solid;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    letter-spacing: 3px;
+    
+}
+
+#about {
+    grid-area: about;
+    height: 400px;
+    text-align: center;
+    padding-top: 1.5rem;
+}
 
 .services {
     display: grid;
-    grid-template-areas: 
+    height: auto;
+    grid-template-areas:
         "alarm"
         "sprinkler"
         "extinguisher"
-        "contact"
     ;
+    background-color: #2E2A2A;
+    color: #fff;
 }
 
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
 
+section {
+    background-color: #EFEFEF;
+    color: #2E2A2A;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    height: 400px;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    grid-area: footer;
+    text-align: center;
+    height: 200px;
+    background-color: #EFEFEF;
+}
 
